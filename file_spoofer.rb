@@ -67,5 +67,5 @@ if options[:spoof]
 end
 
 if options[:output] && options[:input] && options[:icon]
-  exec "wine '/home/mfadzilr/.wine/drive_c/Program Files (x86)/Resource Hacker/ResourceHacker.exe' -open #{options[:input]} -save #{options[:output]} -action addskip -res #{options[:icon]} -mask 'ICONGROUP,MAINICON,'"
+  exec "wine '#{Dir.home}/.wine/drive_c/Program Files (x86)/Resource Hacker/ResourceHacker.exe' -open #{options[:input]} -save #{options[:output]} -action addskip -res #{options[:icon]} -mask 'ICONGROUP,MAINICON,'"
 end
